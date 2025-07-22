@@ -8,8 +8,18 @@ COPY . .
 RUN npm run build
 
 FROM nginx:1.25-alpine
-RUN rm -rf /usr/share/nginx/html/*
+
+# Gusiba default nginx config
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Gushyiramo frontend build
 COPY --from=build /app/dist /usr/share/nginx/html
 
-EXPOSE 80
+# Gushyiramo config yacu iha nginx port 8000
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Guhindura port container izajya yumvaho
+EXPOSE 8000
+
+# Gutangiza nginx
 CMD ["nginx", "-g", "daemon off;"]
