@@ -133,6 +133,7 @@ npm run dev
 
 **Edit a file directly in GitHub**
 
+
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
@@ -167,3 +168,4 @@ To connect a domain, navigate to Project > Settings > Domains and click Connect 
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
 >>>>>>> fd7bf5b (Use tech stack vite_react_shadcn_ts)
+

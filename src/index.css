@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 225 25% 15%;
+
+    /* Tech-inspired primary color - deep blue with purple hint */
+    --primary: 230 70% 30%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Electric accent - vibrant blue */
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Secondary color - softer blue-gray */
+    --secondary: 210 30% 95%;
+    --secondary-foreground: 230 60% 20%;
+    
+    /* Subtle elements */
+    --muted: 220 20% 94%;
+    --muted-foreground: 220 10% 40%;
+    
+    /* Card styling */
+    --card: 0 0% 100%;
+    --card-foreground: 225 25% 15%;
+    
+    /* Popover styling */
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 25% 15%;
+    
+    /* Destructive elements */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Borders and inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 230 70% 30%;
+    
+    /* Border radius */
+    --radius: 0.5rem;
+    
+    /* Special elements */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(230 70% 30%), hsl(250 70% 30%));
+    --gradient-accent: linear-gradient(135deg, hsl(210 100% 50%), hsl(230 100% 65%));
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+    /* Sidebar customization */
+    --sidebar-background: 230 15% 98%;
+    --sidebar-foreground: 230 25% 26%;
+    --sidebar-primary: 230 70% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 15% 95%;
+    --sidebar-accent-foreground: 230 25% 15%;
+    --sidebar-border: 230 13% 91%;
+    --sidebar-ring: 230 70% 50%;
+  }
+
+  .dark {
+    /* Base colors */
+    --background: 230 30% 10%;
+    --foreground: 210 40% 98%;
+
+    /* Tech-inspired primary in dark mode - brighter blue with purple hint */
+    --primary: 230 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Electric accent - more vibrant in dark mode */
+    --accent: 210 100% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Secondary color - deeper blue-gray */
+    --secondary: 220 25% 20%;
+    --secondary-foreground: 210 40% 98%;
+    
+    /* Subtle elements */
+    --muted: 220 20% 18%;
+    --muted-foreground: 220 10% 70%;
+    
+    /* Card styling */
+    --card: 230 30% 12%;
+    --card-foreground: 210 40% 98%;
+    
+    /* Popover styling */
+    --popover: 230 30% 12%;
+    --popover-foreground: 210 40% 98%;
+    
+    /* Destructive elements */
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 40% 98%;
+    
+    /* Borders and inputs */
+    --border: 220 25% 20%;
+    --input: 220 25% 20%;
+    --ring: 230 80% 60%;
+    
+    /* Special elements */
+    --success: 142 70% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Gradients - more vibrant in dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(230 70% 40%), hsl(250 70% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(210 100% 60%), hsl(230 100% 75%));
+    
+    /* Sidebar customization */
+    --sidebar-background: 230 30% 12%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 230 80% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 230 25% 20%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 230 25% 20%;
+    --sidebar-ring: 230 80% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
