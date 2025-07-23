@@ -48,7 +48,7 @@ export interface Product {
   specifications: { [key: string]: string };
   features: string[];
 }
-
+//uupdate
 export const products: Product[] = [
   {
     id: 'hp-Elitebook-g3',
