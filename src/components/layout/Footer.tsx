@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import logo from '/src/assets/logo.jpg';
+
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,26 +12,29 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Iyizire Shop
-              </span>
-            </Link>
-            <p className="mb-4 text-muted-foreground">
-              Your trusted source for premium tech products in Rwanda. Quality devices, competitive prices, excellent service.
-            </p>
-            <div className="flex space-x-4">
-              <a href="https://facebook.com" className="text-muted-foreground hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="https://instagram.com" className="text-muted-foreground hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="https://twitter.com" className="text-muted-foreground hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+  <Link to="/" className="inline-block mb-4">
+    {/* Replaced text with the logo image, making it larger */}
+    <img
+      src={logo}
+      alt="Iyizire Shop Logo"
+      className="h-20 w-auto" // Increased size, adjust h-12 as needed
+    />
+  </Link>
+  <p className="mb-4 text-muted-foreground">
+    Your trusted source for premium tech products in Rwanda. Quality devices, competitive prices, excellent service.
+  </p>
+  <div className="flex space-x-4">
+    <a href="https://facebook.com" className="text-muted-foreground hover:text-primary transition-colors">
+      <Facebook className="h-5 w-5" />
+    </a>
+    <a href="https://instagram.com" className="text-muted-foreground hover:text-primary transition-colors">
+      <Instagram className="h-5 w-5" />
+    </a>
+    <a href="https://twitter.com" className="text-muted-foreground hover:text-primary transition-colors">
+      <Twitter className="h-5 w-5" />
+    </a>
+  </div>
+</div>
 
           {/* Quick Links */}
           <div>

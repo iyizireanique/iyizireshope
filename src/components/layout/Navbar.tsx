@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/context/CartContext";
+import logo from '/src/assets/logo.jpg';
 import { 
   ShoppingCart, 
   Menu, 
@@ -27,15 +28,19 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/" className="flex items-center">
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Iyizire Shop
-              </span>
-            </Link>
-          </div>
+      <div className="flex h-16 items-center justify-between">
+  {/* Logo */}
+  <div className="flex items-center">
+  <Link to="/" className="flex items-center">
+    {/* The logo image, now larger and without the text */}
+    <img
+      src={logo}
+      alt="Iyizire Store Logo"
+      className="h-16 w-auto" // Increased height (h-12) and removed mr-2 since there's no text
+    />
+  </Link>
+</div>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
