@@ -29,7 +29,7 @@ import usss from '/src/assets/usss.jpg';
 import caver2 from '/src/assets/CAVER 2.jpg';
 import lapg3 from '/src/assets/lapg3.jpg';
 import lapg31 from '/src/assets/lapg31.jpg';
-import lap32 from '/src/assets/lap32.jpg';
+import lap32 from '/src/assets/lapg32.jpg';
 
 export interface Product {
   id: string;
