@@ -27,6 +27,9 @@ import standerr from '/src/assets/standerr.jpg';
 import stand1 from '/src/assets/stand1.jpg';
 import usss from '/src/assets/usss.jpg';
 import caver2 from '/src/assets/CAVER 2.jpg';
+import lapg3 from '/src/assets/lapg3.jpg';
+import lapg31 from '/src/assets/lapg31.jpg';
+import lap32 from '/src/assets/lap32.jpg';
 
 export interface Product {
   id: string;
@@ -47,6 +50,39 @@ export interface Product {
 }
 
 export const products: Product[] = [
+  {
+    id: 'hp-Elitebook-g3',
+    name: 'HP EliteBook G3',
+    description: 'Intel Core i7, 8GB RAM, 256GB SSD, 15.6" Display',
+    price: 380000,
+    originalPrice: 450000,
+    rating: 4.3,
+    reviewCount: 56,
+    images: [lapg3,lapg31,lap32],
+    category: 'laptops',
+    brand: 'HP',
+    inStock: true,
+    stockCount: 15,
+    badge: 'Budget Pick',
+    specifications: {
+      'Processor': 'Intel Core i7 (6th Gen)',
+      'Memory': '8GB DDR4 RAM',
+      'Storage': '256GB SSD',
+      'Display': '15.6" HD',
+      'Graphics': 'Intel HD Graphics 520',
+      'Battery': 'Up to 7 hours',
+      'Weight': '1.95 kg'
+    },
+    features: [
+      'Sturdy business design',
+      'Built-in webcam',
+      'HDMI & USB 3.0 ports',
+      'Windows 10 Pro',
+      'Numeric keypad',
+      'Affordable and reliable'
+    ]
+  },
+  
   {
     id: 'hp-envy-x360',
     name: "HP Envy x360 13\"",
